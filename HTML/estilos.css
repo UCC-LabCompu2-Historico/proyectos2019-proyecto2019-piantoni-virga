@@ -35,7 +35,7 @@
 }
 
 body{
-    background-color: snow ;
+    background-color: #5f7d9f ;
     margin: 0;
     padding: 0;
     font-family: 'Arial', Serif;
@@ -43,7 +43,7 @@ body{
 
 
 .nav {
-    background-color: #595959;
+    background-color: black;
     color: #ffffff;
     list-style: none;
     text-align: center;
@@ -61,4 +61,8 @@ body{
 }
 .nav >li >a:hover {
     color: #c1c1c1;
+    font-size: 20px;
+}
+.nav > li> a:active {
+    font-weight: bold;
 }
