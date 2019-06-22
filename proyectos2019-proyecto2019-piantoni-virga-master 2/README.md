@@ -10,7 +10,7 @@ Utilizamos lo aprendido en clases para poder asi subir todos los cambios que hac
 
 # Creadores
 Piantoni Vera, Francisco
-Virga
+
 Virga, Santos Jose
 # Informacion
 

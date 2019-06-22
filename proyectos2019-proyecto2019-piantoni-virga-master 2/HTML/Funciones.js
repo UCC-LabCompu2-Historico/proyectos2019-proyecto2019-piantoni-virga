@@ -3,7 +3,7 @@
 //Para todos, tendiramos que poner que al poner un numero negativo, nos de error,
 // o nos salga una alerta de que no se puede tomar ese numero.
 
-
+//Canvas tutorial de mozilla forums
 
 
 
@@ -65,6 +65,6 @@ function areaRectangulo(){
 }
 
 
-
+//Animaciones 
 
 
