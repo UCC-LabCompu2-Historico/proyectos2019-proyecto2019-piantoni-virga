@@ -5,6 +5,7 @@
     <title>Practico</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
 
 <body>
@@ -17,53 +18,79 @@
 
 
 
-
+<body>
 <ul class="nav">
     <li><a href="index.html">Teorico</a></li>
     <li><a href="practico.html">Practico</a></li>
 </ul>
-
-
-<div class="subTitulo">Calcule el area y perimetro</div>
-<form id="Datos a calcular">
-    <div class="subITEM"> SELECCIONE LA FIGURA</div>
-    <div class="contenido">
-        <select name="tipo_defigura"> <br>
-    <option value="Cuadrado">CUADRADO</option>
-    <option value="Circulo">CIRCULO</option>
-    <option value="Triangulo isoseles">TRIANGULO ISOSELES</option>
-    <option value="Triangulo rectangulo">TRIANGULO RECTANGULO</option>
-    <option value="Triangulo equilatero">TRIANGULO EQUILATERO</option>
-    <option value="Trapecio">TRAPECIO</option>
-    <option value="Rombo">ROMBO</option>
-    <option value="Paralelogramo">PARALELOGRAMO</option>
-        </select>
-
-
-    <div class="subITEM"> QUE DESEA CALCULAR?</div>
-
-        <select name="tipo_defigura"> <br>
-            <option value="Area">AREA</option>
-            <option value="Perimetro">PERIMETRO</option>
-            <option value="Area y Perimetro">AREA Y PERIMETRO</option>
-        </select>
-        <br>
-        <br>
-
-        Agregue un comentario:<br>
-        <textarea name="comentario">
-
-
-    </textarea>
-        <br>
-        <button type="button">Enviar</button> <br>
-</form>
-
-</div>
-
-
-<div class="contenido">
-    <img src="Imagenes/UCC.png">
-</div>
 </body>
+<div>
+
+    <nav>
+        <div id="navegador">
+            <ul>
+                <li><a href="index.html">Teórico e Introduccion</a></li>
+                <li><a href="practico.html">Perímetro</a></li>
+                <li><a href="Area.html">Area</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section>
+    <p>Ingrese los datos de las figuras geometricas que desea calcular:</p>
+</section>
+
+
+<section>
+    <h3>Circulo</h3>
+    <div class="box">
+        <p><i>Fórmula = 2*π*r</i></p>
+    </div>
+    <p>Ingrese el radio para calcular el perimetro:</p>
+    <p><input type="number" name="radio" id="radio"></p>
+    <p><input type = "button" name="botonCalcular1" value="Calcular Perímetro" onclick="perimetroCirculo()"></p>
+</section>
+<section>
+    <div class="graf">
+        <canvas id="miCanvas" width="400" height="200" style="border:2px solid #000000;">
+    </div>
+</section>
+<section>
+    <p>Gráfico</p>
+</section>
+
+
+<section>
+    <h3>Cuadrado</h3>
+    <div class="box">
+        <p><i>Fórmula = L*4</i></p>
+    </div>
+    <p>Ingrese el lado para el cálculo:</p>
+    <p><input type="number" name="lado" id="lado"></p>
+    <p><input type="button" name="botonCalcular2" value="Calcular Perímetro" onclick="perimetroCuadrado()"></p>
+</section>
+<section>
+    <div class="graf">
+        <canvas width="400" height="200" style="border:2px solid #000000;">
+    </div>
+</section>
+<section>
+    <p><input type="button" name="botonDibujar" value="Dibujar" onclick="Dibujar()"></p>
+    <p>Gráfico sobre el cálculo</p>
+</section>
+
+
+<section>
+    <h3>Rectángulo</h3>
+    <div class="box">
+        <p><i>Fórmula = 2*(b*h)</i></p>
+    </div>
+    <p>Ingrese la base para el cálculo:</p>
+    <p><input type="number" name="base" id="base"></p>
+    <p>Ingrese la altura para el cálculo</p>
+    <p><input type="number" name="altura" id="altura"></p>
+    <p><input type = "button" name="botonCalcular3" value="Calcular Perímetro" onclick="perimetroRectangulo()"></p>
+</section>
+
 </html>
+
