@@ -66,3 +66,12 @@ body{
 .nav > li> a:active {
     font-weight: bold;
 }
+
+
+canvas{
+    width:400px;
+    height:200px;
+    border:2px solid #000000;
+    padding: 0px;
+    display: inline;
+}

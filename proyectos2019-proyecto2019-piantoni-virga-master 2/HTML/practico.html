@@ -34,7 +34,7 @@
             </ul>
         </div>
     </nav>
-
+<!--
     <section>
         <p>Ingrese los datos de las figuras geometricas que desea calcular:</p>
     </section>
@@ -51,7 +51,7 @@
     </section>
     <section>
         <div class="graf">
-            <canvas id="miCanvas" width="400" height="200" style="border:2px solid #000000;">
+            <canvas id="miCanvas" width="400" height="200" style="border:2px solid #000000;"></canvas>
         </div>
     </section>
     <section>
@@ -70,7 +70,7 @@
     </section>
     <section>
         <div class="graf">
-            <canvas width="400" height="200" style="border:2px solid #000000;">
+            <canvas width="400" height="200" style="border:2px solid #000000;"></canvas>
         </div>
     </section>
     <section>
@@ -93,4 +93,72 @@
 </body>
 </html>
 
+-->
+
+
+<section>
+    <p>Aquí calcularemos el perimetro de las figuras geométricas:</p>
+    <ul>
+        <li>Circulo</li>
+        <li>Triangulo</li>
+        <li>Cuadrado</li>
+        <li>Rectangulo</li>
+    </ul>
+</section>
+<section>
+    <h3>Circulo</h3>
+    <div class="box">
+        <p><i>Fórmula = 2πr</i></p>
+    </div>
+    <p>Ingrese el radio para el cálculo:</p>
+    <p><input type="number" name="radio" id="radio"></p>
+    <p><input type = "button" name="botonCalcular1" value="Calcular Perímetro" onclick="perimetroCirculo()"></p>
+</section>
+<section>
+    <div class="graf" >
+        <canvas id="miCanvas"></canvas>
+    </div>
+</section>
+<section>
+    <p>Gráfico sobre el cálculo</p>
+</section>
+
+<section>
+    <h3>Cuadrado</h3>
+    <div class="box">
+        <p><i>Fórmula = L*4</i></p>
+    </div>
+    <p>Ingrese el lado para el cálculo:</p>
+    <p><input type="number" name="lado" id="lado"></p>
+    <p><input type="button" name="botonCalcular2" value="Calcular Perímetro" onclick="perimetroCuadrado()"></p>
+</section>
+<section>
+    <div class="graf">
+        <canvas id="miCanvas3"></canvas>
+    </div>
+</section>
+<section>
+    <p><input type="button" name="botonDibujar" value="Dibujar" onclick="dibujarCuadrado()"></p>
+    <p>Gráfico sobre el cálculo</p>
+</section>
+<section>
+    <h3>Rectángulo</h3>
+    <div class="box">
+        <p><i>Fórmula = 2(b*h)</i></p>
+    </div>
+    <p>Ingrese la base para el cálculo:</p>
+    <p><input type="number" name="base" id="base"></p>
+    <p>Ingrese la altura para el cálculo</p>
+    <p><input type="number" name="altura" id="altura"></p>
+    <p><input type = "button" name="botonCalcular3" value="Calcular Perímetro" onclick="perimetroRectangulo()"></p>
+</section>
+<section>
+    <div class="graf">
+        <canvas id="miCanvas4"></canvas>
+    </div>
+</section>
+<p><input type="button" name="botonDibujar" value="Dibujar" onclick="dibujarRectangulo()"></p>
+<p>Gráfico sobre el cálculo</p>
+
+<!-- El dibujar un rectangulo arreglarlo. No lo podia hcer como lo decia la pagina -->
 
